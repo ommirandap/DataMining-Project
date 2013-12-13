@@ -15,20 +15,20 @@ def get_tweet(id=None):
 	response = requests.get(url, auth=auth)
 	return response
 
-file_in = sys.argv[1]
-file_out = 'Recovered-' + file_in
-a = open(file_in,'r')
-b = open(file_out,'a')
+input_filename = sys.argv[1]
+input_stream = open(input_filename,'r')
 
-for ids in a:
+output_filename = 'Recovered-' + input_filename
+output_file = open(output_filename,'a')
+
+for ids in input_stream:
 	tweet_id = json.loads(ids)
 	tweet_id = tweet_id['id_str']
-	complete_tweet = get_tweet(tweet_id)
-	b.write(complete_tweet.content)
-	b.write('\n')
-	print('iteracion lista')
+	full_tweet = get_tweet(tweet_id)
+	output_file.write(full_tweet.content)
+	output_file.write('\n')
 
-a.close()
-b.close()
+input_stream.close()
+output_file.close()
 
 
