@@ -7,9 +7,11 @@ CS Department - Universidad de Chile
 
 ### Files
 
-	<blockquote>
-		<p>For example.</p>
-	</blockquote>
+### Use
+If you want to use an script, just have to run the python script with the input JSON file as an argument
+Like this:
+
+	%python script.py input_file.js
 
 ### Authors
 *	Omar Miranda ([@ommirandap](http://www.twitter.com/ommirandap))
