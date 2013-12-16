@@ -4,6 +4,7 @@ CS Department - Universidad de Chile
 -------------------------------------
 
 ### Introduction
+This project was created as an exploratory assingment about Data Mining. The main object was to create a DataSet about Chilean's Elections (for President).
 
 ### Files
 
