@@ -8,6 +8,8 @@ This project was created as an exploratory assingment about Data Mining. The mai
 
 ### Files
 
+We provide a few scripts for recover and process data from the Dataset (provided by us too). 
+
 ### Use
 If you want to use an script, just have to run the python script with the input JSON file as an argument.
 Like this:
